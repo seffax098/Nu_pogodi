@@ -1,0 +1,50 @@
+@import 'styles/variables';
+
+.modes {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin: 12px 0 10px;
+}
+
+.button {
+  display: flex;
+  flex: 1;
+  gap: 10px;
+  align-items: center;
+  padding: 8px 12px;
+  border: 2px solid @ink;
+  border-radius: 8px;
+  background: transparent;
+  color: @ink;
+  font: 700 18px @font-text;
+  text-align: left;
+  cursor: pointer;
+  transition: background 80ms;
+
+  small {
+    display: block;
+    font-weight: 400;
+    font-size: 13px;
+    opacity: 0.8;
+  }
+
+  &:hover,
+  &:focus-visible {
+    background: fade(@ink, 12%);
+    outline: none;
+  }
+}
+
+.key {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: @ink;
+  color: #cdd3ba;
+  font: 400 16px @font-display;
+}

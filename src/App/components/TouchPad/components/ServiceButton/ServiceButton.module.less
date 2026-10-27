@@ -1,0 +1,18 @@
+@import 'styles/mixins';
+
+.button {
+  padding: 10px 0;
+  border: 0;
+  border-radius: 20px;
+  background: linear-gradient(180deg, #e3e4e5, #a9abad);
+  box-shadow: 0 3px 0 @metal-shadow;
+  color: #2e3033;
+  font: 700 13px @font-text;
+  letter-spacing: 1px;
+  touch-action: manipulation;
+}
+
+.pressed,
+.button:active {
+  .pressed-down(@metal-shadow);
+}

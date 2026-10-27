@@ -1,0 +1,24 @@
+@import 'variables';
+
+// Большая красная кнопка «Электроники»
+.red-button() {
+  border-radius: 50%;
+  background: radial-gradient(circle at 38% 32%, @accent-light 0%, @accent 45%, @accent-dark 100%);
+  touch-action: manipulation;
+  cursor: pointer;
+}
+
+// Маленькая металлическая кнопка
+.metal-button() {
+  border: 0;
+  background: radial-gradient(circle at 35% 30%, #f6f6f6 0%, #a9abad 60%, #7d8083 100%);
+  box-shadow: 0 3px 0 @metal-shadow, 0 4px 6px rgba(0, 0, 0, 0.4);
+  touch-action: manipulation;
+  cursor: pointer;
+}
+
+// Кнопка «утоплена»: нажатие мышью, пальцем или клавишей
+.pressed-down(@shadow: @accent-shadow) {
+  transform: translateY(4px);
+  box-shadow: 0 1px 0 @shadow, 0 2px 4px rgba(0, 0, 0, 0.4);
+}

@@ -1,0 +1,1 @@
+export { WolfBody } from './WolfBody';

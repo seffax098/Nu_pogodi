@@ -1,0 +1,38 @@
+@import 'styles/mixins';
+
+.row {
+  position: absolute;
+  top: 12px;
+  right: 34px;
+  display: flex;
+  gap: 18px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  width: 64px;
+}
+
+.label {
+  font: 700 11px @font-text;
+  letter-spacing: 1px;
+  color: @label;
+  white-space: nowrap;
+}
+
+.button {
+  .metal-button();
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border-radius: 50%;
+  transition: transform 60ms, box-shadow 60ms;
+}
+
+.pressed,
+.button:active {
+  .pressed-down(@metal-shadow);
+}

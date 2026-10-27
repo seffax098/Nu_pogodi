@@ -1,0 +1,19 @@
+@import 'variables';
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  overflow-x: hidden;
+  background: radial-gradient(ellipse at 50% 40%, rgba(255, 220, 160, 0.18), rgba(0, 0, 0, 0) 60%),
+    repeating-linear-gradient(92deg, rgba(0, 0, 0, 0.05) 0 2px, rgba(0, 0, 0, 0) 2px 9px),
+    linear-gradient(180deg, @table-light, @table-dark);
+  background-color: @table-dark;
+  color: @text-light;
+  font-family: @font-text;
+  overscroll-behavior: none;
+  touch-action: manipulation;
+}

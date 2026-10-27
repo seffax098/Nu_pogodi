@@ -1,0 +1,54 @@
+@import 'styles/variables';
+
+.device {
+  position: relative;
+  box-sizing: border-box;
+  padding: 14px;
+  border-radius: 44px;
+  background: linear-gradient(160deg, #f2ede1 0%, #ddd5c3 55%, #c9bfab 100%);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.45), 0 6px 14px rgba(0, 0, 0, 0.3), inset 0 2px 1px rgba(255, 255, 255, 0.8),
+    inset 0 -4px 6px rgba(0, 0, 0, 0.18);
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Металлическая лицевая панель со «шлифовкой» */
+.faceplate {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 32px;
+  background: repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.06) 0 1px, rgba(0, 0, 0, 0.03) 1px 3px),
+    linear-gradient(175deg, #e9eaea 0%, #c4c7c9 45%, #d9dbdc 70%, #b3b6b8 100%);
+  box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.9), inset 0 -2px 3px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+
+.brand {
+  position: absolute;
+  top: 22px;
+  left: 40px;
+  font: italic 900 30px @font-display;
+  letter-spacing: 3px;
+  color: @accent;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.7), 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+
+.stripe {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 30px;
+  height: 14px;
+  background: linear-gradient(180deg, @accent, @accent-dark);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+.model {
+  position: absolute;
+  right: 40px;
+  bottom: 50px;
+  font: 700 16px @font-text;
+  letter-spacing: 2px;
+  color: #45474a;
+}
